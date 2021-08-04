@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  
+  font-size: calc(9px + 1.5vmin);
+  color: white;
+  /* color: rgb(201, 60, 95);
+  color: rgb(255, 160, 116); */
+}
+
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+.card-header, .modal-header{
+  background-image: linear-gradient(to right,#ff84a3, #ffb6b6, #fff4ad, #ffc966);
+  color: #282c34;
+}
+
+.card-body .modal{
+  color: #282c34 !important;
+}
+.App-link {
+  /* color: #ff84a3; */
+  color: #61dafb;
+}
+.App-logo {
+  height: 5vmin;
+  pointer-events: none;
+  /* background-image: url("./logo.png"); */
+  /* margin-left: 2%; */
+  margin-right: 2%;
+  margin-left: 20px; 
+}
+
+@keyframes App-loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-loading {
+  height: 5vmin;
+  pointer-events: none;
+  margin-right: 2%;
+  margin-left: 20px; 
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-loading {
+    animation: App-loading-spin infinite 3s linear;
+  }
+}

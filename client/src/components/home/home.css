@@ -1,0 +1,111 @@
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat); */
+
+.home-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+.img-container {
+    position: fixed;
+    bottom: 0;
+    /* width: 300px; */
+    /* padding-top: 50vh; */ 
+}
+.image {    
+
+    opacity: 1;
+    /* display: block; */
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .category-name {    border: 2px solid #ff84a3;
+border-radius: 10px;
+      /* background-color: #ffb6b6; */
+   padding: 5px;
+      transition: .5s ease;
+    opacity: 0;
+    color:#ffffff;
+    text-shadow:2px 2px 3px  #727272;
+    position: absolute;
+    font-size: calc(5px + 2.8vw);
+    top:35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  /* .image:hover .image {
+    opacity: 0.3;
+  }
+  
+  .image:hover .details {
+    opacity: 1;
+  } */
+  .img-container:hover .image {
+    opacity: 0.4;
+  }
+  
+  .img-container:hover .category-name {
+    opacity: 1;
+  }
+
+
+.svg-lg {
+    font-size: calc(175px + 2vmin);
+    width: 90%;
+    height:30%;
+    text-shadow:7px -7px 4px #888888;
+    position: fixed;
+    /* top: 2%; */
+    right: 5%;
+    
+
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #dddcdc;
+	animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+	stroke:#ff84a3;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #727272;
+	/* stroke: #fff4ad; */
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #ffb6b6;
+	/* stroke: #ffb6b6; */
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #ffc966;
+	animation-delay: -5s;
+}
+
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
